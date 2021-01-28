@@ -1,31 +1,73 @@
 body {
   margin: 0;
-  color: #30e3ca;
+  color: #663f3f;
   text-align: center;
   font-family: verdana, sans-serif;
+  margin-bottom: 0;
 }
+
 h1 {
   margin-top: 0;
   font-family: 'Sacramento', cursive;
-  font-size: 67px;
+  font-size: 80px;
   margin-bottom: 0;
+  color: #ec4646;
 }
+
 h2 {
   font-family: 'Yusei Magic', sans-serif;
   font-size: 38px;
+  color: #ec4646;
+  margin-bottom: 0;
 }
+
 h3 {
+  font-size: 28px;
   font-family: 'Yusei Magic', sans-serif;
   margin-top: 0;
+  color: #663f3f;
+}
+p {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  padding-top: 15px;
+}
+hr {
+  border-style: dotted hidden hidden hidden;
+  width: 10%;
+  border-width: 15px;
+  animation: animationForHorizontalRule;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes animationForHorizontalRule {
+  from {
+    width: 10%;
+  }
+
+  to {;
+    width: 16%;
+  }
+}
+hr:hover{
+  animation: animationForHorizontalRule;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 .topContainer {
   margin-left: 0;
   margin-top: 0;
   margin-right: 0;
-  background-color: #e4f9f5;
+  background-color: #bbf1fa;
   position: relative;
-  padding-top: 137px;
+  padding-top: 120px;
 }
+
 .topCloud {
   position: absolute;
   right: 250px;
@@ -35,11 +77,21 @@ h3 {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 2;
 }
+
 @keyframes forTopCloud {
-  0% {right: 250px;}
-  50% {right: 380px;}
-  100% {right: 250px;}
+  0% {
+    right: 250px;
+  }
+
+  50% {
+    right: 380px;
+  }
+
+  100% {
+    right: 250px;
+  }
 }
+
 .bottomCloud {
   position: absolute;
   left: 300px;
@@ -49,17 +101,31 @@ h3 {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
+
 @keyframes forBottomCloud {
-  0% {left: 450px;}
-  33% {left: 300px;}
-  66% {left: 380px;}
-  100% {left: 300px}
+  0% {
+    left: 450px;
+  }
+
+  33% {
+    left: 300px;
+  }
+
+  66% {
+    left: 380px;
+  }
+
+  100% {
+    left: 300px
+  }
 }
-.pythonIcon{
+
+.coding {
   width: 210px;
   padding-bottom: 20px;
 }
-.sajalProfilePicture{
+
+.sajalProfilePicture {
   width: 290px;
   filter: contrast(1);
   background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
@@ -71,6 +137,7 @@ h3 {
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
 }
+
 @keyframes animationForProfilePicture {
   0% {
     background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
@@ -78,12 +145,13 @@ h3 {
     border-radius: 100%;
     filter: opacity(0);
   }
+
   85% {
-  background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  padding: 0;
-  border-radius: 100%;
-  filter: opacity(75%);
-}
+    background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 0;
+    border-radius: 100%;
+    filter: opacity(75%);
+  }
 
   100% {
     background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
@@ -91,4 +159,31 @@ h3 {
     border-radius: 100%;
     filter: opacity(100%);
   }
+}
+
+.middle-container {
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #bbf1fa;
+}
+.videoEditingIcon {
+    width: 340px;
+    padding-bottom: 20px;
+}
+.contact-me {
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #bbf1fa;
+}
+.bottom-container {
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #bbf1fa;
+  margin-bottom: 0;
+}
+.socialMediaIcon{
+  width: 40px;
 }
