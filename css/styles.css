@@ -12,6 +12,7 @@ h1 {
   font-size: 80px;
   margin-bottom: 0;
   color: #ec4646;
+  text-shadow: 1.05px 1.05px 1.5px #ff2e63;
 }
 
 h2 {
@@ -27,16 +28,25 @@ h3 {
   margin-top: 0;
   color: #663f3f;
 }
+
 p {
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   padding-top: 15px;
 }
+
 hr {
   border-style: dotted hidden hidden hidden;
   width: 10%;
   border-width: 15px;
+  animation: animationForHorizontalRule;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+hr:hover {
   animation: animationForHorizontalRule;
   animation-duration: 0.4s;
   animation-timing-function: ease-in-out;
@@ -48,17 +58,12 @@ hr {
     width: 10%;
   }
 
-  to {;
+  to {
+    ;
     width: 16%;
   }
 }
-hr:hover{
-  animation: animationForHorizontalRule;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
+
 .topContainer {
   margin-left: 0;
   margin-top: 0;
@@ -75,7 +80,7 @@ hr:hover{
   animation: forTopCloud;
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
 }
 
 @keyframes forTopCloud {
@@ -97,26 +102,74 @@ hr:hover{
   left: 300px;
   bottom: 280px;
   animation: forBottomCloud;
-  animation-duration: 16s;
+  animation-duration: 12s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 
 @keyframes forBottomCloud {
   0% {
     left: 450px;
   }
+  50% {
+    left: 300px
+  }
+  100% {
+    left: 450px;
+  }
+}
 
-  33% {
-    left: 300px;
+.mountain {
+  position: relative;
+  animation: animationForMountain;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animationForMountain {
+  0% {
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
 
-  66% {
-    left: 380px;
+  50% {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
   }
 
   100% {
-    left: 300px
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.mountain:hover {
+  position: relative;
+  animation: animationForMountainHover;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animationForMountainHover {
+  0% {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  50% {
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+  }
+
+  100% {
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -167,16 +220,19 @@ hr:hover{
   padding-right: 100px;
   background-color: #bbf1fa;
 }
+
 .videoEditingIcon {
-    width: 340px;
-    padding-bottom: 20px;
+  width: 340px;
+  padding-bottom: 20px;
 }
+
 .contact-me {
   padding-top: 20px;
   padding-left: 100px;
   padding-right: 100px;
   background-color: #bbf1fa;
 }
+
 .bottom-container {
   padding-top: 30px;
   padding-left: 100px;
@@ -184,6 +240,7 @@ hr:hover{
   background-color: #bbf1fa;
   margin-bottom: 0;
 }
-.socialMediaIcon{
+
+.socialMediaIcon {
   width: 40px;
 }
