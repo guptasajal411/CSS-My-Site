@@ -1,0 +1,12 @@
+Use on the web
+To embed a font, copy the code into the <head> of your html
+
+<link>
+@import
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sacramento&family=Yusei+Magic&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Yusei Magic', sans-serif;
