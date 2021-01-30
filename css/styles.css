@@ -46,6 +46,7 @@ hr {
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
+
 hr:hover {
   animation: animationForHorizontalRule;
   animation-duration: 0.4s;
@@ -53,6 +54,7 @@ hr:hover {
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
+
 @keyframes animationForHorizontalRule {
   from {
     width: 10%;
@@ -111,9 +113,11 @@ hr:hover {
   0% {
     left: 450px;
   }
+
   50% {
     left: 300px
   }
+
   100% {
     left: 450px;
   }
@@ -173,11 +177,6 @@ hr:hover {
   }
 }
 
-.coding {
-  width: 210px;
-  padding-bottom: 20px;
-}
-
 .sajalProfilePicture {
   width: 290px;
   filter: contrast(1);
@@ -221,9 +220,28 @@ hr:hover {
   background-color: #bbf1fa;
 }
 
-.videoEditingIcon {
-  width: 340px;
+.skill-row {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.68;
+}
+
+.skillIcon {
+  width: 160px;
   padding-bottom: 20px;
+}
+
+.skillHeading {
+  text-align: center;
+}
+
+a {
+  color: #ec4646;
+}
+
+a:hover {
+  color: #663f3f;
 }
 
 .contact-me {
@@ -234,13 +252,12 @@ hr:hover {
 }
 
 .bottom-container {
-  padding-top: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: #bbf1fa;
-  margin-bottom: 0;
+  background-color: #ec4646;
+  color: #663f3f;
+  margin: 0;
 }
 
 .socialMediaIcon {
   width: 40px;
+  padding: 65px 20px 0 20px;
 }
